@@ -1,0 +1,6 @@
+framework module OCCustomComponent {
+  umbrella header "OCCustomComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

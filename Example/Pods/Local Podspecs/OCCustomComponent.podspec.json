@@ -1,0 +1,22 @@
+{
+  "name": "OCCustomComponent",
+  "version": "0.1.0",
+  "summary": "A short description of OCCustomComponent.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rocky080/OCCustomComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rocky080": "navin@itoneclick.com"
+  },
+  "source": {
+    "git": "https://github.com/rocky080/OCCustomComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "OCCustomComponent/Classes/**/*"
+}

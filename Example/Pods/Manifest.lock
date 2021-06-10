@@ -1,0 +1,16 @@
+PODS:
+  - OCCustomComponent (0.1.0)
+
+DEPENDENCIES:
+  - OCCustomComponent (from `../`)
+
+EXTERNAL SOURCES:
+  OCCustomComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OCCustomComponent: 14e73857d405870bba0421640698bd7817c7b6ac
+
+PODFILE CHECKSUM: d251c8ec8f97f1727981a15fc77ebde090c31eb6
+
+COCOAPODS: 1.9.3

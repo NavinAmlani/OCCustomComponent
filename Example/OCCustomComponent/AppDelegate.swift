@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  OCCustomComponent
 //
-//  Created by rocky080 on 06/10/2021.
-//  Copyright (c) 2021 rocky080. All rights reserved.
+//  Created by NavinAmlani on 06/10/2021.
+//  Copyright (c) 2021 NavinAmlani. All rights reserved.
 //
 
 import UIKit
