@@ -41,7 +41,6 @@ extension UILabel
             return contentSize
         }
     }
-    
     var optimalHeight : CGFloat {
         get
         {

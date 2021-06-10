@@ -24,7 +24,6 @@ import UIKit
         } else {
             // Fallback on earlier versions
         }
-       
         self.keyboardType = .default
         self.setPlaceholder(placeholder: "Enter description...")
         self.returnKeyType = .done

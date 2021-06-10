@@ -34,7 +34,7 @@ class OCDefaultTextField : UITextField, UITextFieldDelegate
         } else {
             // Fallback on earlier versions
         }
-        
+       
         self.keyboardType = .default
         self.returnKeyType = .done
     }
@@ -110,7 +110,6 @@ class OCEmailTextField : UITextField, UITextFieldDelegate
         } else {
             // Fallback on earlier versions
         }
-       
         self.keyboardType = .emailAddress
         self.returnKeyType = .done
     }
@@ -169,7 +168,6 @@ class OCMobileTextField : UITextField, UITextFieldDelegate
         } else {
             // Fallback on earlier versions
         }
-       
         self.keyboardType = .numberPad
         self.returnKeyType = .done
     }
@@ -253,7 +251,6 @@ class OCPasswordTextField : UITextField, UITextFieldDelegate
         } else {
             // Fallback on earlier versions
         }
-        
         self.keyboardType = .default
         self.isSecureTextEntry = true
         self.returnKeyType = .done
