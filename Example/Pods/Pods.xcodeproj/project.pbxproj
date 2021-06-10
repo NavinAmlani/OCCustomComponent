@@ -12,6 +12,13 @@
 		2A6F9BF1179C7FF4F74D75ACBB6EA600 /* Pods-OCCustomComponent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EAA0BE3F9B82CABE57549D8CBCD533 /* Pods-OCCustomComponent_Example-dummy.m */; };
 		2EBFFF92050FCA43F7697DFDB0D95671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3D87F4CACE232AC038FF254F51436877 /* Pods-OCCustomComponent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB0BE6F67DE971AA994F78889A2EE /* Pods-OCCustomComponent_Tests-dummy.m */; };
+		4BE4D2312672039800DEB2F8 /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22A2672039700DEB2F8 /* CustomToast.swift */; };
+		4BE4D2322672039800DEB2F8 /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22B2672039700DEB2F8 /* CustomGradientView.swift */; };
+		4BE4D2332672039800DEB2F8 /* OCDefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22C2672039700DEB2F8 /* OCDefaultTextField.swift */; };
+		4BE4D2342672039800DEB2F8 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22D2672039700DEB2F8 /* CustomSlider.swift */; };
+		4BE4D2352672039800DEB2F8 /* OCCustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22E2672039700DEB2F8 /* OCCustomSegmentControl.swift */; };
+		4BE4D2362672039800DEB2F8 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D22F2672039800DEB2F8 /* PlaceholderTextView.swift */; };
+		4BE4D2372672039800DEB2F8 /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4D2302672039800DEB2F8 /* MyCustomButton.swift */; };
 		56DEF1C98C173615BB89283D4D74A359 /* OCCustomComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 373022C98D54087C6BA14676D7115852 /* OCCustomComponent-dummy.m */; };
 		6AF8F693B257126175EA6B15CE894CF6 /* Pods-OCCustomComponent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9164C1971A43F82B2F64D0BF5B3688 /* Pods-OCCustomComponent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8169C2040519318CB05178155707419 /* OCCustomComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9AF88A869A3F2875942D661803BF41 /* OCCustomComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,31 +49,38 @@
 		2547B05683811B6AB97F0F0E8F4479EA /* Pods-OCCustomComponent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCustomComponent_Example-Info.plist"; sourceTree = "<group>"; };
 		2B0AE0C28C1E513F30FB9D873F1500F0 /* Pods-OCCustomComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCCustomComponent_Example.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33EEFDE95CF3C618BF5253F4C9BD6471 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		33EEFDE95CF3C618BF5253F4C9BD6471 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		35174FEE18C017DD17BF642A716484A8 /* Pods-OCCustomComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCustomComponent_Tests-Info.plist"; sourceTree = "<group>"; };
 		353027C3851A3F5872CDED3B444910C2 /* OCCustomComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCCustomComponent.debug.xcconfig; sourceTree = "<group>"; };
 		373022C98D54087C6BA14676D7115852 /* OCCustomComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCCustomComponent-dummy.m"; sourceTree = "<group>"; };
 		459471F191C9DBEDCC6E482F969D3666 /* Pods-OCCustomComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4BC078E205411D648CB48FC84A40ABFF /* Pods-OCCustomComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BE4D22A2672039700DEB2F8 /* CustomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
+		4BE4D22B2672039700DEB2F8 /* CustomGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGradientView.swift; sourceTree = "<group>"; };
+		4BE4D22C2672039700DEB2F8 /* OCDefaultTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCDefaultTextField.swift; sourceTree = "<group>"; };
+		4BE4D22D2672039700DEB2F8 /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		4BE4D22E2672039700DEB2F8 /* OCCustomSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCCustomSegmentControl.swift; sourceTree = "<group>"; };
+		4BE4D22F2672039800DEB2F8 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		4BE4D2302672039800DEB2F8 /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
 		4E3688FD220ED29291EEE2A91303446C /* OCCustomComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCCustomComponent.release.xcconfig; sourceTree = "<group>"; };
 		51A1CE5327244AFA67931B329B22FD18 /* Pods-OCCustomComponent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCCustomComponent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F5F07B7398726ED7CB3D27B4963DB81 /* Pods_OCCustomComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCCustomComponent_Example.framework; path = "Pods-OCCustomComponent_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5F07B7398726ED7CB3D27B4963DB81 /* Pods_OCCustomComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCustomComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9164C1971A43F82B2F64D0BF5B3688 /* Pods-OCCustomComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCCustomComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
-		602984433F70DA4068E4D4C7921B3B69 /* OCCustomComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OCCustomComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7B274155C7C5C19B6D50C9F1933252F5 /* Pods_OCCustomComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCCustomComponent_Tests.framework; path = "Pods-OCCustomComponent_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		602984433F70DA4068E4D4C7921B3B69 /* OCCustomComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OCCustomComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7B274155C7C5C19B6D50C9F1933252F5 /* Pods_OCCustomComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCustomComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A559FF393E2F8B8AA8A5C00A55D849 /* OCCustomComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OCCustomComponent.modulemap; sourceTree = "<group>"; };
 		887BCFA80666D843EC30B32C90FD630F /* Pods-OCCustomComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCustomComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8952F466395C3DB3FCF1A5FE3E251677 /* Pods-OCCustomComponent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCCustomComponent_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8AFAB0BE6F67DE971AA994F78889A2EE /* Pods-OCCustomComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCCustomComponent_Tests-dummy.m"; sourceTree = "<group>"; };
 		8DDF8D8EF2BB39A37DE7E1BDD79B2A71 /* Pods-OCCustomComponent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCCustomComponent_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B821D1D1667E8CA82449DBC81897ED58 /* OCCustomComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCCustomComponent-prefix.pch"; sourceTree = "<group>"; };
 		BA9AF88A869A3F2875942D661803BF41 /* OCCustomComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCCustomComponent-umbrella.h"; sourceTree = "<group>"; };
 		C50C465DF26BAC7F6BB1524F309B81C7 /* Pods-OCCustomComponent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCustomComponent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C52014DFB2B39D5958E0EBD11F88C5A6 /* OCCustomComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCCustomComponent.framework; path = OCCustomComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52014DFB2B39D5958E0EBD11F88C5A6 /* OCCustomComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCCustomComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9AC0E7D6818C0DC178607649CB0BCB /* OCCustomComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OCCustomComponent-Info.plist"; sourceTree = "<group>"; };
 		DD095337B540C106401BB34D5D9988A8 /* Pods-OCCustomComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DD46612C6DC873C56468F020DB537910 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DD46612C6DC873C56468F020DB537910 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1EB4BE154EF0DA45B62B6E8F08A9C1E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = OCCustomComponent/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EBA8BCF8CCC46258817AF14DFF4F466C /* Pods-OCCustomComponent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCCustomComponent_Tests.modulemap"; sourceTree = "<group>"; };
 		EC609021C762FEB635A82A10EFC3B6F1 /* Pods-OCCustomComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +126,7 @@
 		34430CDAD70811D794DA148D744BFA61 /* OCCustomComponent */ = {
 			isa = PBXGroup;
 			children = (
+				4BE4D229267201EB00DEB2F8 /* Classes */,
 				E1EB4BE154EF0DA45B62B6E8F08A9C1E /* ReplaceMe.swift */,
 				9B8BFA46A50033A778E80766CE57604D /* Pod */,
 				F81AF89C4B0B9EE74FBE07C8AE307A48 /* Support Files */,
@@ -128,6 +143,20 @@
 				7B274155C7C5C19B6D50C9F1933252F5 /* Pods_OCCustomComponent_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4BE4D229267201EB00DEB2F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BE4D22B2672039700DEB2F8 /* CustomGradientView.swift */,
+				4BE4D22D2672039700DEB2F8 /* CustomSlider.swift */,
+				4BE4D22A2672039700DEB2F8 /* CustomToast.swift */,
+				4BE4D2302672039800DEB2F8 /* MyCustomButton.swift */,
+				4BE4D22E2672039700DEB2F8 /* OCCustomSegmentControl.swift */,
+				4BE4D22C2672039700DEB2F8 /* OCDefaultTextField.swift */,
+				4BE4D22F2672039800DEB2F8 /* PlaceholderTextView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		73C3DAFA9AA07B03CE0AA4CEA80B3529 /* Development Pods */ = {
@@ -367,8 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE4D2372672039800DEB2F8 /* MyCustomButton.swift in Sources */,
+				4BE4D2312672039800DEB2F8 /* CustomToast.swift in Sources */,
+				4BE4D2342672039800DEB2F8 /* CustomSlider.swift in Sources */,
 				56DEF1C98C173615BB89283D4D74A359 /* OCCustomComponent-dummy.m in Sources */,
+				4BE4D2332672039800DEB2F8 /* OCDefaultTextField.swift in Sources */,
 				1CEA1CBE73181B069C20CD255AA17166 /* ReplaceMe.swift in Sources */,
+				4BE4D2322672039800DEB2F8 /* CustomGradientView.swift in Sources */,
+				4BE4D2352672039800DEB2F8 /* OCCustomSegmentControl.swift in Sources */,
+				4BE4D2362672039800DEB2F8 /* PlaceholderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,8 +626,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
