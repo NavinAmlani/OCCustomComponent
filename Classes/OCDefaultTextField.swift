@@ -28,8 +28,13 @@ class OCDefaultTextField : UITextField, UITextFieldDelegate
         self.delegate = self
         self.autocorrectionType = .no
         self.spellCheckingType = .no
-        self.smartQuotesType = .no
-        self.smartDashesType = .no
+        if #available(iOS 11.0, *) {
+            self.smartQuotesType = .no
+            self.smartDashesType = .no
+        } else {
+            // Fallback on earlier versions
+        }
+        
         self.keyboardType = .default
         self.returnKeyType = .done
     }
@@ -99,8 +104,13 @@ class OCEmailTextField : UITextField, UITextFieldDelegate
         
         self.autocorrectionType = .no
         self.spellCheckingType = .no
-        self.smartQuotesType = .no
-        self.smartDashesType = .no
+        if #available(iOS 11.0, *) {
+            self.smartQuotesType = .no
+            self.smartDashesType = .no
+        } else {
+            // Fallback on earlier versions
+        }
+       
         self.keyboardType = .emailAddress
         self.returnKeyType = .done
     }
@@ -153,8 +163,13 @@ class OCMobileTextField : UITextField, UITextFieldDelegate
         self.delegate = self
         self.autocorrectionType = .no
         self.spellCheckingType = .no
-        self.smartQuotesType = .no
-        self.smartDashesType = .no
+        if #available(iOS 11.0, *) {
+            self.smartQuotesType = .no
+            self.smartDashesType = .no
+        } else {
+            // Fallback on earlier versions
+        }
+       
         self.keyboardType = .numberPad
         self.returnKeyType = .done
     }
@@ -232,8 +247,13 @@ class OCPasswordTextField : UITextField, UITextFieldDelegate
         self.delegate = self
         self.autocorrectionType = .no
         self.spellCheckingType = .no
-        self.smartQuotesType = .no
-        self.smartDashesType = .no
+        if #available(iOS 11.0, *) {
+            self.smartQuotesType = .no
+            self.smartDashesType = .no
+        } else {
+            // Fallback on earlier versions
+        }
+        
         self.keyboardType = .default
         self.isSecureTextEntry = true
         self.returnKeyType = .done

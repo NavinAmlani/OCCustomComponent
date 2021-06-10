@@ -18,8 +18,13 @@ import UIKit
         self.delegate = self
         self.autocorrectionType = .no
         self.spellCheckingType = .no
-        self.smartQuotesType = .no
-        self.smartDashesType = .no
+        if #available(iOS 11.0, *) {
+            self.smartQuotesType = .no
+            self.smartDashesType = .no
+        } else {
+            // Fallback on earlier versions
+        }
+       
         self.keyboardType = .default
         self.setPlaceholder(placeholder: "Enter description...")
         self.returnKeyType = .done

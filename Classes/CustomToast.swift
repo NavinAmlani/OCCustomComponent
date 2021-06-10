@@ -25,7 +25,7 @@ extension UILabel
     
     override open func draw(_ rect: CGRect) {
         if let insets = padding {
-            self.drawText(in: rect.inset(by: insets))
+            self.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
         } else {
             self.drawText(in: rect)
         }
@@ -40,6 +40,20 @@ extension UILabel
             }
             return contentSize
         }
+    }
+    
+    var optimalHeight : CGFloat {
+        get
+        {
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude))
+            label.font = self.font
+            label.text = self.text
+            label.numberOfLines = 0
+            label.lineBreakMode = NSLineBreakMode.byTruncatingTail
+            label.sizeToFit()
+            return label.frame.height + 20
+        }
+        
     }
 }
 
