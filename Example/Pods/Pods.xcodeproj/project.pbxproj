@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17F56A05044AD144FEAF89F42F76D252 /* Pods-OCCustomComponent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDF8D8EF2BB39A37DE7E1BDD79B2A71 /* Pods-OCCustomComponent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CEA1CBE73181B069C20CD255AA17166 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB4BE154EF0DA45B62B6E8F08A9C1E /* ReplaceMe.swift */; };
 		2A6F9BF1179C7FF4F74D75ACBB6EA600 /* Pods-OCCustomComponent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EAA0BE3F9B82CABE57549D8CBCD533 /* Pods-OCCustomComponent_Example-dummy.m */; };
 		2EBFFF92050FCA43F7697DFDB0D95671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3D87F4CACE232AC038FF254F51436877 /* Pods-OCCustomComponent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAB0BE6F67DE971AA994F78889A2EE /* Pods-OCCustomComponent_Tests-dummy.m */; };
@@ -81,7 +80,6 @@
 		CD9AC0E7D6818C0DC178607649CB0BCB /* OCCustomComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OCCustomComponent-Info.plist"; sourceTree = "<group>"; };
 		DD095337B540C106401BB34D5D9988A8 /* Pods-OCCustomComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DD46612C6DC873C56468F020DB537910 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E1EB4BE154EF0DA45B62B6E8F08A9C1E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = OCCustomComponent/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EBA8BCF8CCC46258817AF14DFF4F466C /* Pods-OCCustomComponent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCCustomComponent_Tests.modulemap"; sourceTree = "<group>"; };
 		EC609021C762FEB635A82A10EFC3B6F1 /* Pods-OCCustomComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCustomComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				4BE4D229267201EB00DEB2F8 /* Classes */,
-				E1EB4BE154EF0DA45B62B6E8F08A9C1E /* ReplaceMe.swift */,
 				9B8BFA46A50033A778E80766CE57604D /* Pod */,
 				F81AF89C4B0B9EE74FBE07C8AE307A48 /* Support Files */,
 			);
@@ -401,7 +398,6 @@
 				4BE4D2342672039800DEB2F8 /* CustomSlider.swift in Sources */,
 				56DEF1C98C173615BB89283D4D74A359 /* OCCustomComponent-dummy.m in Sources */,
 				4BE4D2332672039800DEB2F8 /* OCDefaultTextField.swift in Sources */,
-				1CEA1CBE73181B069C20CD255AA17166 /* ReplaceMe.swift in Sources */,
 				4BE4D2322672039800DEB2F8 /* CustomGradientView.swift in Sources */,
 				4BE4D2352672039800DEB2F8 /* OCCustomSegmentControl.swift in Sources */,
 				4BE4D2362672039800DEB2F8 /* PlaceholderTextView.swift in Sources */,
