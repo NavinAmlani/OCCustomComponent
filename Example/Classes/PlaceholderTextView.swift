@@ -29,10 +29,10 @@ import UIKit
         self.returnKeyType = .done
     }
     
-    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+    public func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         return true
     }
-    func textViewDidChange(_ textView: UITextView) {
+    public func textViewDidChange(_ textView: UITextView) {
         self.checkPlaceholder()
     }
 }
