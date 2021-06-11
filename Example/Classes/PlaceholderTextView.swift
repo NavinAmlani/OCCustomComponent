@@ -71,7 +71,7 @@ extension UITextView{
             }
         }
     //MARK:- Set Placeholder
-    func setPlaceholder(placeholder : String) {
+   public func setPlaceholder(placeholder : String) {
 
         let placeholderLabel = UILabel()
         placeholderLabel.text = placeholder
@@ -85,7 +85,7 @@ extension UITextView{
         self.addSubview(placeholderLabel)
     }
 
-    func checkPlaceholder() {
+    public func checkPlaceholder() {
         let placeholderLabel = self.viewWithTag(222) as! UILabel
         placeholderLabel.isHidden = !self.text.isEmpty
     }
