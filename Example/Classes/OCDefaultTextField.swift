@@ -95,7 +95,7 @@ private var KeyMinLength: Int = 0
         awakeFromNib()
         self.setup()
     }
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         delegate = self
     }
     func setup(){
