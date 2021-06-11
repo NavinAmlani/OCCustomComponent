@@ -29,7 +29,7 @@ import UIKit
 }
 //MARK:- Button Animation
 extension UIButton {
-    func pulse() {
+    public func pulse() {
         
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.6
@@ -40,7 +40,7 @@ extension UIButton {
         pulse.initialVelocity = 1
         layer.add(pulse, forKey: "pulse")
     }
-    func flash() {
+   public func flash() {
         
         let flash = CABasicAnimation(keyPath: "opacity")
         flash.duration = 0.5
@@ -52,7 +52,7 @@ extension UIButton {
         
         layer.add(flash, forKey: nil)
     }
-    func shake() {
+  public func shake() {
         
         let shake = CABasicAnimation(keyPath: "position")
         shake.duration = 0.1

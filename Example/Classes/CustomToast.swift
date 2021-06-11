@@ -4,6 +4,69 @@
 import Foundation
 import UIKit
 
+//MARK: Add Toast method function in UIView Extension so can use in whole project.
+extension UIView
+{
+   public func showToast(toastMessage:String,duration:CGFloat)
+    {
+        //View to blur bg and stopping user interaction
+        let bgView = UIView(frame: self.frame)
+        bgView.backgroundColor = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(0.1))
+        bgView.tag = 555
+        
+        //Label For showing toast text
+        let lblMessage = UILabel()
+        lblMessage.numberOfLines = 0
+        lblMessage.lineBreakMode = .byWordWrapping
+        lblMessage.textColor = .white
+        lblMessage.backgroundColor = .black
+        lblMessage.textAlignment = .center
+        lblMessage.font = UIFont.init(name: "Helvetica Neue", size: 15)
+        lblMessage.text = toastMessage
+        
+        //calculating toast label frame as per message content
+        let maxSizeTitle : CGSize = CGSize(width: self.bounds.size.width-16, height: self.bounds.size.height)
+        var expectedSizeTitle : CGSize = lblMessage.sizeThatFits(maxSizeTitle)
+        // UILabel can return a size larger than the max size when the number of lines is 1
+        expectedSizeTitle = CGSize(width:maxSizeTitle.width.getminimum(value2:expectedSizeTitle.width), height: maxSizeTitle.height.getminimum(value2:expectedSizeTitle.height))
+        
+        lblMessage.frame = CGRect(x:((self.bounds.size.width)/2) - ((expectedSizeTitle.width+16)/2) , y: (self.bounds.size.height - (expectedSizeTitle.height+16)) - ((expectedSizeTitle.height+16)/2), width: expectedSizeTitle.width+16, height: expectedSizeTitle.height+16)
+        
+        
+        lblMessage.layer.cornerRadius = 8
+        lblMessage.layer.masksToBounds = true
+        lblMessage.padding = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
+        bgView.addSubview(lblMessage)
+        self.addSubview(bgView)
+        lblMessage.alpha = 0
+        
+        UIView.animateKeyframes(withDuration:TimeInterval(duration) , delay: 0, options: [] , animations: {
+            lblMessage.alpha = 1
+        }, completion: {
+            sucess in
+            UIView.animate(withDuration:TimeInterval(duration), delay: 8, options: [] , animations: {
+                lblMessage.alpha = 0
+                bgView.alpha = 0
+            })
+            bgView.removeFromSuperview()
+        })
+    }
+}
+extension CGFloat
+{
+   public func getminimum(value2:CGFloat)->CGFloat
+    {
+        if self < value2
+        {
+            return self
+        }
+        else
+        {
+            return value2
+        }
+    }
+}
+
 //MARK: Extension on UILabel for adding insets - for adding padding in top, bottom, right, left.
 
 extension UILabel
@@ -41,65 +104,5 @@ extension UILabel
             return contentSize
         }
     }
-    var optimalHeight : CGFloat {
-        get
-        {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude))
-            label.font = self.font
-            label.text = self.text
-            label.numberOfLines = 0
-            label.lineBreakMode = NSLineBreakMode.byTruncatingTail
-            label.sizeToFit()
-            return label.frame.height + 20
-        }
-        
-    }
-}
-
-//MARK:- Toast Structure
-public class ToastMessage {
     
-  public static func showToast(in vc: UIViewController, message: String) {
-   
-        let lbl = UILabel()
-        lbl.text = message
-        
-        let lblHeight = lbl.optimalHeight 
-        print("lblheight ",lblHeight)
-        
-        let viewToast = UIView(frame: CGRect(x: 16,
-                                             y: vc.view.frame.size.height - 100,
-                                             width: vc.view.frame.size.width - 32,
-                                             height: lblHeight + 10))
-        viewToast.backgroundColor = UIColor.black.withAlphaComponent(0.9)
-        viewToast.layer.cornerRadius = 10
-        
-        vc.view.addSubview(viewToast)
-        
-        let toastLabel = UILabel(frame: CGRect(x: 5,
-                                               y: 5,
-                                               width: viewToast.frame.size.width - 10,
-                                               height: lblHeight))
-        
-        toastLabel.textColor = UIColor.white
-        toastLabel.textAlignment = .center
-        toastLabel.font = UIFont.systemFont(ofSize: 15.0) //UIFont(name: "Mark Pro", size: 15.0)
-        toastLabel.text = message
-        toastLabel.alpha = 1.0
-        toastLabel.clipsToBounds = true
-        toastLabel.numberOfLines = 0
-        toastLabel.lineBreakMode = NSLineBreakMode.byTruncatingTail
-        toastLabel.sizeToFit()
-       
-        toastLabel.padding = UIEdgeInsets(top: 15, left: 15, bottom: 10, right: 15)
-        viewToast.addSubview(toastLabel)
-
-        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseOut, animations: {
-            toastLabel.alpha = 0
-            viewToast.alpha = 0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
-            viewToast.removeFromSuperview()
-        })
-    }
 }
