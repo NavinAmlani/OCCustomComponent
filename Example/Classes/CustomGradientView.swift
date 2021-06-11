@@ -4,8 +4,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-class CustomGradientView: UIView {
+@IBDesignable public class CustomGradientView: UIView {
     
     // MARK: - Gradient
     
@@ -27,7 +26,7 @@ class CustomGradientView: UIView {
         }
     }
     
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         get {
             return CAGradientLayer.self
         }

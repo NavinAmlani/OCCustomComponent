@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class PlaceholderTextView: UITextView,UITextViewDelegate
+@IBDesignable public class PlaceholderTextView: UITextView,UITextViewDelegate
 {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

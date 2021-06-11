@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-class OCSegmentControl : UISegmentedControl
+@IBDesignable public class OCSegmentControl : UISegmentedControl
 {
     //MARK:- Corner radius, border
     @IBInspectable
@@ -60,19 +59,19 @@ class OCSegmentControl : UISegmentedControl
    
    
     //MARK:- 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
             super.awakeFromNib()
        
             setupUI()
         }
 
-        override func prepareForInterfaceBuilder() {
+    public override func prepareForInterfaceBuilder() {
             super.prepareForInterfaceBuilder()
           
             setupUI()
         }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
     }

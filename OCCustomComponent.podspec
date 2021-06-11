@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OCCustomComponent'
-  s.version          = '0.1.1'
-  s.summary          = 'A short description of OCCustomComponent.'
+  s.version          = '0.1.2'
+  s.summary          = 'In OCCustomComponent we can use custom property of UITextField,UITextview,UIButton,UISlider,UISegmentControl in storyboard so we can reduce our code'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

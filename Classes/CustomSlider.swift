@@ -8,10 +8,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-
-
-class CustomSlider: UISlider {
+@IBDesignable public class CustomSlider: UISlider {
 
     @IBInspectable var thumbImage: UIImage? {
         didSet {
@@ -38,7 +35,7 @@ class CustomSlider: UISlider {
     //TODO give height of slider
     @IBInspectable var trackHeight: CGFloat = 2
 
-      override func trackRect(forBounds bounds: CGRect) -> CGRect {
+    public override func trackRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(origin: bounds.origin, size: CGSize(width: bounds.width, height: trackHeight))
       }
 }
