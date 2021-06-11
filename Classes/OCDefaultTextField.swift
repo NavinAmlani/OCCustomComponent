@@ -48,7 +48,7 @@ private var KeyMinLength: Int = 0
         self.layer.shadowRadius = 0.0
     }
     //MARK:- Delegate method
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
             if self.text!.count > 0
@@ -61,7 +61,7 @@ private var KeyMinLength: Int = 0
        
         return true
     }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
        // print(#function)
         let whitespaceSet = NSCharacterSet.whitespaces
         let range1 = string.rangeOfCharacter(from: whitespaceSet)
@@ -112,7 +112,7 @@ private var KeyMinLength: Int = 0
         self.returnKeyType = .done
     }
     //MARK:- Delegate method
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        print(#function)
         let whitespaceSet = NSCharacterSet.whitespaces
         let range1 = string.rangeOfCharacter(from: whitespaceSet)
@@ -125,7 +125,7 @@ private var KeyMinLength: Int = 0
         }
         return true
     }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 //        print(#function)
         if self.text!.count > 0
             {
@@ -179,7 +179,7 @@ private var KeyMinLength: Int = 0
         self.layer.shadowRadius = 0.0
     }
     //MARK:- Delegate method
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
             if self.text!.count > 3
@@ -192,7 +192,7 @@ private var KeyMinLength: Int = 0
        
         return true
     }
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
         if self.text!.count > 3
         {
             self.borderColor = .darkGray
@@ -200,7 +200,7 @@ private var KeyMinLength: Int = 0
             self.borderColor = .red
         }
     }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        print(#function)
         let whitespaceSet = NSCharacterSet.whitespaces
         let range1 = string.rangeOfCharacter(from: whitespaceSet)
@@ -262,7 +262,7 @@ private var KeyMinLength: Int = 0
         self.layer.shadowRadius = 0.0
     }
     //MARK:- Delegate method
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
             if self.text!.count > 7
@@ -275,7 +275,7 @@ private var KeyMinLength: Int = 0
        
         return true
     }
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
         if self.text!.count > 7
         {
             self.borderColor = .darkGray
@@ -283,7 +283,7 @@ private var KeyMinLength: Int = 0
             self.borderColor = .red
         }
     }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        print(#function)
         let whitespaceSet = NSCharacterSet.whitespaces
         let range1 = string.rangeOfCharacter(from: whitespaceSet)
