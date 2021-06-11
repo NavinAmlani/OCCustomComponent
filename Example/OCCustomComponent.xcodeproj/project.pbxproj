@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B2C46260A6F65943387FF77 /* Pods_OCCustomComponent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9665FEF43B1A1C8D174334 /* Pods_OCCustomComponent_Tests.framework */; };
+		4B6E145E2673295600CC9B42 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E14572673295600CC9B42 /* CustomSlider.swift */; };
+		4B6E145F2673295600CC9B42 /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E14582673295600CC9B42 /* CustomToast.swift */; };
+		4B6E14602673295600CC9B42 /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E14592673295600CC9B42 /* CustomGradientView.swift */; };
+		4B6E14612673295600CC9B42 /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E145A2673295600CC9B42 /* MyCustomButton.swift */; };
+		4B6E14622673295600CC9B42 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E145B2673295600CC9B42 /* PlaceholderTextView.swift */; };
+		4B6E14632673295600CC9B42 /* OCDefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E145C2673295600CC9B42 /* OCDefaultTextField.swift */; };
+		4B6E14642673295600CC9B42 /* OCCustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E145D2673295600CC9B42 /* OCCustomSegmentControl.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +38,13 @@
 		0CAA24C1BFAE552802C7D2D7 /* Pods-OCCustomComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCustomComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-OCCustomComponent_Tests/Pods-OCCustomComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1DF2831A75B218650C57DD8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		471D6D4C6FEB20982D13E67F /* Pods-OCCustomComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCustomComponent_Example.debug.xcconfig"; path = "Target Support Files/Pods-OCCustomComponent_Example/Pods-OCCustomComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4B6E14572673295600CC9B42 /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		4B6E14582673295600CC9B42 /* CustomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
+		4B6E14592673295600CC9B42 /* CustomGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGradientView.swift; sourceTree = "<group>"; };
+		4B6E145A2673295600CC9B42 /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
+		4B6E145B2673295600CC9B42 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		4B6E145C2673295600CC9B42 /* OCDefaultTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCDefaultTextField.swift; sourceTree = "<group>"; };
+		4B6E145D2673295600CC9B42 /* OCCustomSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCCustomSegmentControl.swift; sourceTree = "<group>"; };
 		5C6DE071AE75896F8F22BA05 /* Pods-OCCustomComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCustomComponent_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OCCustomComponent_Tests/Pods-OCCustomComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OCCustomComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCustomComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,9 +103,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B6E14562673295600CC9B42 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E14572673295600CC9B42 /* CustomSlider.swift */,
+				4B6E14582673295600CC9B42 /* CustomToast.swift */,
+				4B6E14592673295600CC9B42 /* CustomGradientView.swift */,
+				4B6E145A2673295600CC9B42 /* MyCustomButton.swift */,
+				4B6E145B2673295600CC9B42 /* PlaceholderTextView.swift */,
+				4B6E145C2673295600CC9B42 /* OCDefaultTextField.swift */,
+				4B6E145D2673295600CC9B42 /* OCCustomSegmentControl.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				4B6E14562673295600CC9B42 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for OCCustomComponent */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -331,8 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6E14612673295600CC9B42 /* MyCustomButton.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4B6E145E2673295600CC9B42 /* CustomSlider.swift in Sources */,
+				4B6E14632673295600CC9B42 /* OCDefaultTextField.swift in Sources */,
+				4B6E145F2673295600CC9B42 /* CustomToast.swift in Sources */,
+				4B6E14642673295600CC9B42 /* OCCustomSegmentControl.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4B6E14602673295600CC9B42 /* CustomGradientView.swift in Sources */,
+				4B6E14622673295600CC9B42 /* PlaceholderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
