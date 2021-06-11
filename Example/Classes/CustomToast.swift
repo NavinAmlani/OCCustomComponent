@@ -59,7 +59,7 @@ extension UILabel
 //MARK:- Toast Structure
 public class ToastMessage {
     
-    public static func showToast(in vc: UIViewController, message: String) {
+  public static func showToast(in vc: UIViewController, message: String) {
    
         let lbl = UILabel()
         lbl.text = message

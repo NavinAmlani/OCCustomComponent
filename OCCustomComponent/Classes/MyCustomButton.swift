@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-class CustomButton : UIButton
+@IBDesignable public class CustomButton : UIButton
 {
     @IBInspectable var cornerRadius: CGFloat = 0 {
             didSet {
@@ -47,7 +46,7 @@ extension UIButton {
         flash.duration = 0.5
         flash.fromValue = 1
         flash.toValue = 0.1
-        flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 1
         

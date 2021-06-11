@@ -12,8 +12,7 @@ import UIKit
 private var KeyMaxLength: Int = 0
 private var KeyMinLength: Int = 0
 //MARK:- Default Field
-@IBDesignable
-class OCDefaultTextField : UITextField, UITextFieldDelegate
+@IBDesignable public class OCDefaultTextField : UITextField, UITextFieldDelegate
 {
     
     override init(frame: CGRect) {
@@ -81,8 +80,7 @@ class OCDefaultTextField : UITextField, UITextFieldDelegate
     }
 }
 //MARK:- Email Field
-@IBDesignable
-class OCEmailTextField : UITextField, UITextFieldDelegate
+@IBDesignable public class OCEmailTextField : UITextField, UITextFieldDelegate
 {
     
     override init(frame: CGRect) {
@@ -97,7 +95,7 @@ class OCEmailTextField : UITextField, UITextFieldDelegate
         awakeFromNib()
         self.setup()
     }
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         delegate = self
     }
     func setup(){
@@ -147,8 +145,7 @@ class OCEmailTextField : UITextField, UITextFieldDelegate
     
 }
 //MARK:- Mobile number
-@IBDesignable
-class OCMobileTextField : UITextField, UITextFieldDelegate
+@IBDesignable public class OCMobileTextField : UITextField, UITextFieldDelegate
 {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -230,8 +227,7 @@ class OCMobileTextField : UITextField, UITextFieldDelegate
     }
 }
 //MARK:- Password
-@IBDesignable
-class OCPasswordTextField : UITextField, UITextFieldDelegate
+@IBDesignable public class OCPasswordTextField : UITextField, UITextFieldDelegate
 {
     override init(frame: CGRect) {
         super.init(frame: frame)
